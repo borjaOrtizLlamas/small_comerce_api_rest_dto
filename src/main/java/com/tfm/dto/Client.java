@@ -1,9 +1,10 @@
 package com.tfm.dto;	
 
 
+import java.io.Serializable;
 import java.util.List;
 
-public class Client {
+public class Client implements Serializable{
 	String name; 
 	List<Product> products;
 	public String getName() {

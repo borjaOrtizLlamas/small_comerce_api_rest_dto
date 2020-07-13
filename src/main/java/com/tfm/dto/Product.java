@@ -6,7 +6,7 @@ import java.io.Serializable;
 public class Product implements Serializable{
 
 	String name;
-	String precio;
+	String price;
 	String description;
 
 	public String getName() {
@@ -15,11 +15,12 @@ public class Product implements Serializable{
 	public void setName(String name) {
 		this.name = name;
 	}
-	public String getPrecio() {
-		return precio;
+
+	public String getPrice() {
+		return price;
 	}
-	public void setPrecio(String precio) {
-		this.precio = precio;
+	public void setPrice(String price) {
+		this.price = price;
 	}
 	public String getDescription() {
 		return description;
@@ -29,7 +30,7 @@ public class Product implements Serializable{
 	}
 	@Override
 	public String toString() {
-		return "{\"name\":\"" + name + "\", \"precio\":\"" + precio + "\", \"description\":\""+description+"\"}";
+		return "{\"name\":\"" + name + "\", \"price\":\"" + price + "\", \"description\":\""+description+"\"}";
 	}
 
 
